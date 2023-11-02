@@ -74,5 +74,31 @@ class Tree {
         return minValue;
     }
 
+    //create preOrder, postOrder, inOrder treversal by Sandeep Solanki
+    public void inOrderTraversal(TreeNode node) {
+        if (node != null) {
+            inOrderTraversal(node.left);
+            System.out.print(node.data + " ");
+            inOrderTraversal(node.right);
+        }
+    }
+
+    // Pre-order traversal (Root-Left-Right)
+    public void preOrderTraversal(TreeNode node) {
+        if (node != null) {
+            System.out.print(node.data + " ");
+            preOrderTraversal(node.left);
+            preOrderTraversal(node.right);
+        }
+    }
+
+    // Post-order traversal (Left-Right-Root)
+    public void postOrderTraversal(TreeNode node) {
+        if (node != null) {
+            postOrderTraversal(node.left);
+            postOrderTraversal(node.right);
+            System.out.print(node.data + " ");
+        }
+    }
 
 }
