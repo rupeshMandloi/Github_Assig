@@ -102,3 +102,35 @@ class Tree {
     }
 
 }
+// create main function by viraj kumrawat
+public class tree {
+    public static void main(String[] args) {
+        Tree tree = new Tree();
+
+        tree.addNode(50);
+        tree.addNode(30);
+        tree.addNode(70);
+        tree.addNode(20);
+        tree.addNode(40);
+        tree.addNode(60);
+        tree.addNode(80);
+
+        System.out.println("In-order traversal:");
+        tree.inOrderTraversal(tree.root);
+
+         System.out.println("In-order traversal:");
+        tree.inOrderTraversal(tree.root);
+
+        System.out.println("\nPre-order traversal:");
+        tree.preOrderTraversal(tree.root);
+
+        System.out.println("\nPost-order traversal:");
+        tree.postOrderTraversal(tree.root);
+
+        tree.removeNode(30);
+
+        System.out.println("\nIn-order traversal after removing 30:");
+        tree.inOrderTraversal(tree.root);
+
+    }
+}
